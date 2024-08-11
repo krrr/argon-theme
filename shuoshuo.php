@@ -2,7 +2,8 @@
 /*
 Template Name: 说说
 */
-query_posts("post_type=shuoshuo&post_status=publish&posts_per_page=-1");
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+query_posts(array('post_type' => 'shuoshuo', 'post_status' => 'publish', 'posts_per_page' => get_option('posts_per_page'), 'paged' => $paged));
 ?>
 
 <?php get_header(); ?>

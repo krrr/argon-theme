@@ -3117,10 +3117,6 @@ function init_shuoshuo(){
 		'show_in_menu' => true,
 		'exclude_from_search' => true,
 		'query_var' => true,
-		'rewrite' => array(
-			'slug' => 'shuoshuo',
-			'with_front' => false
-		),
 		'capability_type' => 'post',
 		'has_archive' => false,
 		'hierarchical' => false,
