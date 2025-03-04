@@ -20321,3 +20321,9 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     right: 10px;
     left: auto;
 }
+
+.wp-caption-text
+{
+    text-align: center;
+    font-size: 0.8rem;
+}

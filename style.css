@@ -4448,28 +4448,14 @@ pre.hljs-codeblock {
 	position: relative;
 	tab-size: 4;
 }
-pre.hljs-codeblock:before {
-	content: "";
-	position: absolute;
-	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPjxjaXJjbGUgY3g9IjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkY1RjU2IiBzdHJva2U9IiNFMDQ0M0UiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjI2IiBjeT0iNiIgcj0iNiIgZmlsbD0iI0ZGQkQyRSIgc3Ryb2tlPSIjREVBMTIzIiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI0NiIgY3k9IjYiIHI9IjYiIGZpbGw9IiMyN0M5M0YiIHN0cm9rZT0iIzFBQUIyOSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+PC9nPjwvc3ZnPg==)
-		no-repeat;
-	background-position-y: center;
-	top: 22px;
-	left: 20px;
-	height: 14px;
-	width: 54px;
-	margin-left: 5px;
-	display: block;
-}
 code[hljs-codeblock-inner] {
 	line-height: 1.5;
-	font-size: 16px;
-	padding: 22px 20px !important;
+	font-size: 15px;
+	padding: 10px;
 	border-radius: 8px;
-	box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px;
-	margin-top: 15px !important;
-	margin-bottom: 15px !important;
-	padding-top: 55px !important;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 5px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	display: block;
 }
 .hljs-ln-numbers {
@@ -4483,7 +4469,7 @@ code[hljs-codeblock-inner] {
 	vertical-align: top;
 	padding-right: 12px !important;
 	position: absolute;
-	left: 20px;
+	left: 10px;
 	width: 30px;
 	overflow-x: visible !important;
 	white-space: nowrap;
@@ -4492,8 +4478,8 @@ code[hljs-codeblock-inner] {
 .hljs-ln-numbers:before {
 	content: "";
 	position: absolute;
-	left: -20px;
-	width: 20px;
+	left: -10px;
+	width: 10px;
 	height: 100%;
 	background: inherit;
 }
@@ -4574,7 +4560,7 @@ pre.hljs-codeblock.hljs-hide-linenumber .hljs-ln-code {
 pre.hljs-codeblock .hljs-control {
 	display: block;
 	position: absolute;
-	top: 16px !important;
+	top: 12px !important;
 	right: 20px !important;
 	user-select: none;
 	opacity: 0;
@@ -5236,3 +5222,23 @@ html.using-safari #blog_setting_card_radius_to_default:before {
 html.using-safari .friend-link-description:after {
 	display: none;
 }
+
+
+.fancybox-wrapper {
+	display: contents;
+}
+.fancybox-wrapper > img {
+	border-radius: var(--card-radius);
+	border-color: #4d66703b !important;
+	box-shadow: rgba(0,0,0,.1) 0 3px 14px;
+}
+.gallery-item .fancybox-wrapper > img {
+	box-shadow: rgba(0,0,0,.2) 0 5px 20px;
+}
+
+.fancybox-wrapper > a::before {
+	display: none;
+}
+/*.gallery-icon > a::before  {*/
+/*	display: none;*/
+/*}*/
