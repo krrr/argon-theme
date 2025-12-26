@@ -4107,8 +4107,8 @@ html[lang] {
 	padding-bottom: 10px;
 }
 .shuoshuo-content p {
-	margin-bottom: 0;
-	line-height: 1.8;
+	margin-bottom: 0.6rem;
+	line-height: 1.5;
 }
 .shuoshuo-content * {
 	max-width: 100%;
