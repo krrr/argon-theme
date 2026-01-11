@@ -4113,6 +4113,25 @@ html[lang] {
 .shuoshuo-content * {
 	max-width: 100%;
 }
+.shuoshuo-content h1 {
+	font-size: 17px;
+}
+.shuoshuo-content h2 {
+	font-size: 16px;
+}
+.shuoshuo-content h3 {
+	font-size: 15px;
+}
+.shuoshuo-content h4 {
+	font-size: 14px;
+}
+.shuoshuo-content h5 {
+	font-size: 13px;
+}
+.shuoshuo-content h6 {
+	font-size: 12px;
+}
+
 .shuoshuo-comments {
 	font-size: 14px;
 	opacity: 0.85;
