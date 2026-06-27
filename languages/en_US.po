@@ -1929,10 +1929,6 @@ msgstr ""
 "The maximum zoom ratio of the image relative to the page (decimal from 0 to "
 "1)"
 
-#: settings.php:1168
-msgid "启用 Pangu.js (自动在中英文之间添加空格)"
-msgstr "Enable Pangu.js (automatically add spaces between Chinese and English)"
-
 #: settings.php:1173
 msgid "格式化文章内容"
 msgstr "Format article content"

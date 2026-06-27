@@ -1860,10 +1860,6 @@ msgstr "圖片最大縮放比例"
 msgid "图片相对于页面的最大缩放比例 (0 ~ 1 的小数)"
 msgstr "圖片相對於頁面的最大縮放比例 (0 ~ 1 的小數)"
 
-#: settings.php:1168
-msgid "启用 Pangu.js (自动在中英文之间添加空格)"
-msgstr "啟用 Pangu.js (自動在中英文之間添加空格)"
-
 #: settings.php:1173
 msgid "格式化文章内容"
 msgstr "格式化文章內容"

@@ -140,7 +140,6 @@
 			<?php } else { ?>
 				zoomify: false,
 			<?php } ?>
-			pangu: "<?php echo get_option('argon_enable_pangu', 'false'); ?>",
 			<?php if (get_option('argon_enable_lazyload') != 'false'){ ?>
 				lazyload: {
 					threshold: <?php echo get_option('argon_lazyload_threshold', 800); ?>,

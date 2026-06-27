@@ -1595,7 +1595,6 @@ $(document).on("submit" , ".post-password-form" , function(){
 				}, 500, 'easeOutExpo');
 				foldLongComments();
 				calcHumanTimesOnPage();
-				panguInit();
 				$(".comment-item-text .comment-sticker.lazyload").lazyload(argonConfig.lazyload).removeClass("lazyload");
 			},
 			error : function(){
@@ -1627,7 +1626,6 @@ $(document).on("submit" , ".post-password-form" , function(){
 				}
 				foldLongComments();
 				calcHumanTimesOnPage();
-				panguInit();
 				$(".comment-item-text .comment-sticker.lazyload").lazyload(argonConfig.lazyload).removeClass("lazyload");
 			},
 			error : function(){
@@ -1754,20 +1752,6 @@ function lazyloadInit(){
 	$(".comment-item-text .comment-sticker.lazyload").lazyload(Object.assign(argonConfig.lazyload, {load: function(){$(this).removeClass("lazyload")}}));
 }
 lazyloadInit();
-
-/*Pangu.js*/
-function panguInit(){
-	if (argonConfig.pangu.indexOf("article") >= 0){
-		pangu.spacingElementByClassName('post-content');
-	}
-	if (argonConfig.pangu.indexOf("comment") >= 0){
-		pangu.spacingElementById('comments');
-	}
-	if (argonConfig.pangu.indexOf("shuoshuo") >= 0){
-		pangu.spacingElementByClassName('shuoshuo-content');
-	}
-}
-panguInit();
 
 /*Clamp.js*/
 function clampInit(){
@@ -1925,7 +1909,6 @@ $(document).pjax("a[href]:not([no-pjax]):not(.no-pjax):not([target='_blank']):no
 	lazyloadInit();
 	zoomifyInit();
 	highlightJsRender();
-	panguInit();
 	clampInit();
 	tippyInit();
 	getGithubInfoCardContent();
