@@ -828,6 +828,11 @@ html.darkmode #navbar-main {
 #navbar-main.navbar-ontop {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	box-shadow: none;  /* cancel headroom style */
+}
+#navbar-main.navbar-transited {
+	border-bottom: 1px solid #ffffff29;
+	box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 body.leftbar-can-headroom.headroom---unpinned #navbar-main {
 	transform: translateY(-100%);

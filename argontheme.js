@@ -244,25 +244,24 @@ function __(text){
 		let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 		if (scrollTop < startTransitionHeight){
 			toolbar.style.setProperty('background-color', 'rgba(var(--toolbar-color), 0)', 'important');
-			toolbar.style.setProperty('box-shadow', 'none');
 			if (argonConfig.toolbar_blur){
 				toolbar.style.setProperty('backdrop-filter', 'blur(0px)');
 			}
+			toolbar.classList.remove("navbar-transited");
 			toolbar.classList.add("navbar-ontop");
 			return;
 		}
 		if (scrollTop > endTransitionHeight){
 			toolbar.style.setProperty('background-color', 'rgba(var(--toolbar-color), ' + maxOpacity + ')', 'important');
-			toolbar.style.setProperty('box-shadow', '');
 			if (argonConfig.toolbar_blur){
 				toolbar.style.setProperty('backdrop-filter', 'blur(16px)');
 			}
+			toolbar.classList.add("navbar-transited");
 			toolbar.classList.remove("navbar-ontop");
 			return;
 		}
 		let transparency = (scrollTop - startTransitionHeight) / (endTransitionHeight - startTransitionHeight) * maxOpacity;
 		toolbar.style.setProperty('background-color', 'rgba(var(--toolbar-color), ' + transparency, 'important');
-		toolbar.style.setProperty('box-shadow', '');
 		if (argonConfig.toolbar_blur){
 			if ((scrollTop - startTransitionHeight) / (endTransitionHeight - startTransitionHeight) > 0.3){
 				toolbar.style.setProperty('backdrop-filter', 'blur(16px)');
@@ -2612,5 +2611,5 @@ setInterval(function(){
 !function(){
 	console.log('%cTheme: %cArgon%cBy solstice23', 'color: rgba(255,255,255,.6); background: #5e72e4; font-size: 15px;border-radius:5px 0 0 5px;padding:10px 0 10px 20px;','color: rgba(255,255,255,1); background: #5e72e4; font-size: 15px;border-radius:0;padding:10px 15px 10px 0px;','color: #fff; background: #92A1F4; font-size: 15px;border-radius:0 5px 5px 0;padding:10px 20px 10px 15px;');
 	console.log('%cVersion%c' + $("meta[name='theme-version']").attr("content"), 'color:#fff; background: #5e72e4;font-size: 12px;border-radius:5px 0 0 5px;padding:3px 10px 3px 10px;','color:#fff; background: #92a1f4;font-size: 12px;border-radius:0 5px 5px 0;padding:3px 10px 3px 10px;');
-	console.log('%chttps://github.com/solstice23/argon-theme', 'font-size: 12px;border-radius:5px;padding:3px 10px 3px 10px;border:1px solid #5e72e4;');
+	console.log('%chttps://github.com/krrr/argon-theme', 'font-size: 12px;border-radius:5px;padding:3px 10px 3px 10px;border:1px solid #5e72e4;');
 }();
